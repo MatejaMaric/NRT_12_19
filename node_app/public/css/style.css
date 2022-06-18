@@ -5,3 +5,7 @@ table, th, td {
 .flex {
   display: flex;
 }
+
+.my-1 {
+  margin-block: 1rem;
+}

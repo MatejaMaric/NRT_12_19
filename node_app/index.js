@@ -31,7 +31,11 @@ let oglasi = [
 ];
 
 app.get("/", (req, res) => {
-  res.render("home", { oglasi });
+  if (req.query.kategorija) {
+    res.render("home", { oglasi: oglasi.filter(o => o.kategorija === req.query.kategorija) });
+  } else {
+    res.render("home", { oglasi });
+  }
 })
 
 app.post("/", (req, res) => {
