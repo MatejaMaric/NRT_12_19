@@ -41,7 +41,25 @@ app.post("/", (req, res) => {
 })
 
 app.get("/izbrisi/:id", (req, res) => {
-  oglasi = oglasi.filter(o => o.id != req.params.id);
+  oglasi = oglasi.filter(o => o.id !== Number(req.params.id));
+  res.redirect("/");
+});
+
+app.get("/edituj/:id", (req, res) => {
+  res.render("edituj", oglasi.find(o => o.id === Number(req.params.id)));
+});
+
+app.post("/edituj/:id", (req, res) => {
+  const { kategorija, datum_isteka, cena, tekst, oznaka, email } = req.body;
+  const oglas = oglasi.find(o => o.id === Number(req.params.id))
+
+  oglas.kategorija = kategorija;
+  oglas.datum_isteka = datum_isteka;
+  oglas.cena = cena;
+  oglas.tekst = tekst;
+  oglas.oznaka = oznaka;
+  oglas.email = email;
+
   res.redirect("/");
 });
 

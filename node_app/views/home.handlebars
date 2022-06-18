@@ -23,7 +23,10 @@
       <td>{{ this.tekst }}</td>
       <td>{{ this.oznaka }}</td>
       <td>{{ this.email }}</td>
-      <td>
+      <td class="flex">
+        <form action="/edituj/{{ this.id }}">
+          <input type="submit" value="Edituj" />
+        </form>
         <form action="/izbrisi/{{ this.id }}">
           <input type="submit" value="Izbrisi" />
         </form>

@@ -1,0 +1,26 @@
+<h1>Edituj oglas</h1>
+
+<form action="/edituj/{{ this.id }}" method="POST">
+  <div>kategorija</div>
+  <input type="text" name="kategorija" value="{{ this.kategorija }}" />
+
+  <div>datum_isteka</div>
+  <input type="date" name="datum_isteka" value="{{ this.datum_isteka }}" />
+
+  <div>cena</div>
+  <input type="number" name="cena" value="{{ this.cena }}" />
+
+  <div>tekst</div>
+  <input type="text" name="tekst" value="{{ this.tekst }}" />
+
+  <div>oznaka</div>
+  <input type="text" name="oznaka" value="{{ this.oznaka }}" />
+
+  <div>email</div>
+  <input type="email" name="email" value="{{ this.email }}" />
+
+  <div>
+    <input type="submit" value="Edituj oglas" />
+  </div>
+
+</form>
