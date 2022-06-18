@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Oglasi SYSTEM "oglasi.dtd">
+<Oglasi>
+    <Oglas>
+        <Kategorija>Nekretnine</Kategorija>
+        <DatumIsteka>2022-09-18</DatumIsteka>
+        <Cena valuta="EUR">70000</Cena>
+        <Tekst>Stan u Vojvode Stepe</Tekst>
+        <Oznake>
+          <Oznaka tip="velicina">50m2</Oznaka>
+        </Oznake>
+        <EmailAdrese>
+          <Email email="privatni">pera@zdera.rs</Email>
+        </EmailAdrese>
+    </Oglas>
+    <Oglas>
+        <Kategorija>Laptopovi</Kategorija>
+        <DatumIsteka>2022-07-14</DatumIsteka>
+        <Cena valuta="EUR">200</Cena>
+        <Tekst>ThinkPad X220</Tekst>
+        <Oznake>
+          <Oznaka tip="rezolucina">1280x720</Oznaka>
+        </Oznake>
+        <EmailAdrese>
+          <Email email="privatni">pera@zdera.rs</Email>
+        </EmailAdrese>
+    </Oglas>
+</Oglasi>
