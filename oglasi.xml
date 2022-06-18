@@ -22,7 +22,7 @@
           <Oznaka tip="rezolucina">1280x720</Oznaka>
         </Oznake>
         <EmailAdrese>
-          <Email email="privatni">pera@zdera.rs</Email>
+          <Email tip="privatni">pera@zdera.rs</Email>
         </EmailAdrese>
     </Oglas>
 </Oglasi>
