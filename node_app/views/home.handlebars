@@ -1,1 +1,59 @@
-<h1>Home<h1>
+<h1>Oglasi</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>kategorija</th>
+      <th>datum_isteka</th>
+      <th>cena</th>
+      <th>tekst</th>
+      <th>oznaka</th>
+      <th>email</th>
+      <th>akcija</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each oglasi}}
+    <tr>
+      <td>{{ this.id }}</td>
+      <td>{{ this.kategorija }}</td>
+      <td>{{ this.datum_isteka }}</td>
+      <td>{{ this.cena }}</td>
+      <td>{{ this.tekst }}</td>
+      <td>{{ this.oznaka }}</td>
+      <td>{{ this.email }}</td>
+      <td>
+        <form action="/izbrisi/{{ this.id }}">
+          <input type="submit" value="Izbrisi" />
+        </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<form action="/" method="POST">
+  <div>kategorija</div>
+  <input type="text" name="kategorija" />
+
+  <div>datum_isteka</div>
+  <input type="date" name="datum_isteka" />
+
+  <div>cena</div>
+  <input type="number" name="cena" />
+
+  <div>tekst</div>
+  <input type="text" name="tekst" />
+
+  <div>oznaka</div>
+  <input type="text" name="oznaka" />
+
+  <div>email</div>
+  <input type="email" name="email" />
+
+  <div>
+    <input type="submit" value="Novi oglas" />
+  </div>
+
+</form>
