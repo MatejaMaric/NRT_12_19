@@ -2,7 +2,7 @@
 <!DOCTYPE Oglasi SYSTEM "oglasi.dtd">
 <Oglasi>
     <Oglas>
-        <Kategorija>Nekretnine</Kategorija>
+        <Kategorija naziv="nekretnine" />
         <DatumIsteka>2022-09-18</DatumIsteka>
         <Cena valuta="EUR">70000</Cena>
         <Tekst>Stan u Vojvode Stepe</Tekst>
