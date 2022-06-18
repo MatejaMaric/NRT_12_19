@@ -10,11 +10,11 @@
           <Oznaka tip="velicina">50m2</Oznaka>
         </Oznake>
         <EmailAdrese>
-          <Email email="privatni">pera@zdera.rs</Email>
+          <Email tip="privatni">pera@zdera.rs</Email>
         </EmailAdrese>
     </Oglas>
     <Oglas>
-        <Kategorija>Laptopovi</Kategorija>
+        <Kategorija naziv="laptopovi" />
         <DatumIsteka>2022-07-14</DatumIsteka>
         <Cena valuta="EUR">200</Cena>
         <Tekst>ThinkPad X220</Tekst>
